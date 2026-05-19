@@ -1,0 +1,14 @@
+# Build output
+/build/
+/build-mingw/
+
+# Claude Code
+.claude/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# CMake generated
+CMakeUserPresets.json
