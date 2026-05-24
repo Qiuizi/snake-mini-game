@@ -1,6 +1,8 @@
 # Tank Battle TUI
 
-A terminal-based tank battle game written in C++17, powered by [FTXUI](https://github.com/ArthurSonzogni/FTXUI).
+An intelligent terminal tank battle game written in C++17, built with CMake, and rendered with [FTXUI](https://github.com/ArthurSonzogni/FTXUI).
+
+![Tank Battle TUI preview](docs/screenshot.svg)
 
 Author: [Qiuizi](https://github.com/Qiuizi)
 
@@ -15,6 +17,13 @@ Author: [Qiuizi](https://github.com/Qiuizi)
 - Three escalating waves with a capped number of active enemies
 - Score, lives, wave, remaining enemies, and temporary respawn shield
 - Pause, restart, victory, and game-over states
+
+## Highlights
+
+- Uses object-oriented C++ to model tanks, bullets, terrain, waves, and game state.
+- Loads a 30 x 20 level from a plain text map file.
+- Uses BFS to make enemies search the map and chase the player.
+- Copies MinGW runtime DLLs and level files next to the Windows executable after build.
 
 ## Controls
 
@@ -91,6 +100,8 @@ cmake --build build --config Release
 ```text
 .
 |-- CMakeLists.txt
+|-- docs/
+|   `-- screenshot.svg
 |-- maps/
 |   `-- level1.txt
 |-- src/

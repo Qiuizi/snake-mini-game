@@ -1,0 +1,104 @@
+<svg width="980" height="560" viewBox="0 0 980 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tank Battle TUI preview</title>
+  <desc id="desc">Terminal-style preview of a tank battle game board with score, lives, wave, and controls panels.</desc>
+  <rect width="980" height="560" fill="#0d1117"/>
+  <rect x="24" y="24" width="932" height="512" rx="14" fill="#111827" stroke="#30363d" stroke-width="2"/>
+  <text x="52" y="62" fill="#d1d5db" font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="700">Tank Battle TUI</text>
+  <text x="52" y="90" fill="#7dd3fc" font-family="Consolas, 'Courier New', monospace" font-size="13">C++17 + CMake + FTXUI | BFS enemy pathfinding | text map loading</text>
+
+  <g transform="translate(52 120)">
+    <rect width="600" height="360" rx="8" fill="#050505" stroke="#9ca3af" stroke-width="2"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="16" font-weight="700">
+      <text x="24" y="34" fill="#9ca3af">##############################</text>
+      <text x="24" y="58" fill="#9ca3af">#</text>
+      <text x="40" y="58" fill="#f87171">vv</text>
+      <text x="72" y="58" fill="#4b5563">............</text>
+      <text x="264" y="58" fill="#9ca3af">##</text>
+      <text x="312" y="58" fill="#4b5563">..........</text>
+      <text x="504" y="58" fill="#f87171">vv</text>
+      <text x="552" y="58" fill="#9ca3af">#</text>
+
+      <text x="24" y="82" fill="#9ca3af">#</text>
+      <text x="56" y="82" fill="#4b5563">....</text>
+      <text x="136" y="82" fill="#d97706">BBBB</text>
+      <text x="232" y="82" fill="#4b5563">..........</text>
+      <text x="424" y="82" fill="#d97706">BBBB</text>
+      <text x="552" y="82" fill="#9ca3af">#</text>
+
+      <text x="24" y="106" fill="#9ca3af">#</text>
+      <text x="72" y="106" fill="#d97706">BB</text>
+      <text x="152" y="106" fill="#9ca3af">##</text>
+      <text x="248" y="106" fill="#4b5563">......</text>
+      <text x="376" y="106" fill="#9ca3af">##</text>
+      <text x="472" y="106" fill="#d97706">BB</text>
+      <text x="552" y="106" fill="#9ca3af">#</text>
+
+      <text x="24" y="130" fill="#9ca3af">#</text>
+      <text x="88" y="130" fill="#4b5563">......</text>
+      <text x="216" y="130" fill="#d97706">BBBB</text>
+      <text x="344" y="130" fill="#d97706">BBBB</text>
+      <text x="552" y="130" fill="#9ca3af">#</text>
+
+      <text x="24" y="154" fill="#9ca3af">#</text>
+      <text x="72" y="154" fill="#9ca3af">##</text>
+      <text x="152" y="154" fill="#4b5563">....</text>
+      <text x="248" y="154" fill="#d97706">BBBB</text>
+      <text x="376" y="154" fill="#d97706">BBBB</text>
+      <text x="488" y="154" fill="#9ca3af">##</text>
+      <text x="552" y="154" fill="#9ca3af">#</text>
+
+      <text x="24" y="178" fill="#9ca3af">#</text>
+      <text x="88" y="178" fill="#4b5563">....</text>
+      <text x="184" y="178" fill="#d97706">BBBB</text>
+      <text x="280" y="178" fill="#9ca3af">####</text>
+      <text x="376" y="178" fill="#d97706">BBBB</text>
+      <text x="552" y="178" fill="#9ca3af">#</text>
+
+      <text x="24" y="202" fill="#9ca3af">#</text>
+      <text x="72" y="202" fill="#d97706">BB</text>
+      <text x="152" y="202" fill="#9ca3af">##</text>
+      <text x="248" y="202" fill="#4b5563">......</text>
+      <text x="376" y="202" fill="#9ca3af">##</text>
+      <text x="472" y="202" fill="#d97706">BB</text>
+      <text x="552" y="202" fill="#9ca3af">#</text>
+
+      <text x="24" y="226" fill="#9ca3af">#</text>
+      <text x="184" y="226" fill="#d97706">BBBBBBBB</text>
+      <text x="552" y="226" fill="#9ca3af">#</text>
+
+      <text x="24" y="250" fill="#9ca3af">#</text>
+      <text x="104" y="250" fill="#4b5563">....</text>
+      <text x="232" y="250" fill="#34d399">/\</text>
+      <text x="552" y="250" fill="#9ca3af">#</text>
+
+      <text x="24" y="274" fill="#9ca3af">#</text>
+      <text x="216" y="274" fill="#d97706">B.B.B</text>
+      <text x="552" y="274" fill="#9ca3af">#</text>
+
+      <text x="24" y="298" fill="#9ca3af">#</text>
+      <text x="216" y="298" fill="#d97706">B.</text>
+      <text x="248" y="298" fill="#22d3ee">HQ</text>
+      <text x="280" y="298" fill="#d97706">.B</text>
+      <text x="552" y="298" fill="#9ca3af">#</text>
+
+      <text x="24" y="322" fill="#9ca3af">##############################</text>
+    </g>
+  </g>
+
+  <g transform="translate(684 120)" font-family="Consolas, 'Courier New', monospace">
+    <rect width="220" height="110" rx="8" fill="#050505" stroke="#9ca3af" stroke-width="2"/>
+    <text x="42" y="32" fill="#f9fafb" font-size="18" font-weight="700">STATUS</text>
+    <text x="24" y="62" fill="#d1d5db" font-size="15">Score   000300</text>
+    <text x="24" y="86" fill="#d1d5db" font-size="15">Lives   3</text>
+
+    <rect y="132" width="220" height="110" rx="8" fill="#050505" stroke="#9ca3af" stroke-width="2"/>
+    <text x="42" y="164" fill="#f9fafb" font-size="18" font-weight="700">MISSION</text>
+    <text x="24" y="194" fill="#d1d5db" font-size="15">Wave    2 / 3</text>
+    <text x="24" y="218" fill="#d1d5db" font-size="15">Enemies 7</text>
+
+    <rect y="264" width="220" height="96" rx="8" fill="#050505" stroke="#9ca3af" stroke-width="2"/>
+    <text x="42" y="296" fill="#f9fafb" font-size="18" font-weight="700">CONTROLS</text>
+    <text x="24" y="326" fill="#d1d5db" font-size="15">WASD / Arrows</text>
+    <text x="24" y="350" fill="#d1d5db" font-size="15">Space / J fire</text>
+  </g>
+</svg>
